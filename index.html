@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Card</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <section>
+        <!-- card is a BLOCK because it stands alone and other elements come under it-->
+        <div class="card">
+
+            <!-- Everything under card is an ELEMENT and you can tell they all belong to the CARD block because that's the first word followed by a double under score -->
+            <img src="images/istockphoto-1292588329-170667a.jpg" alt="A tree" class="card__img">
+            <div class="card__content">
+                <h2 class="card__title">I am a tree</h2>
+                <p class="card__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt cupiditate fugiat repellat, facilis dolorum eius. Temporibus aperiam itaque modi laudantium et, natus, in rem iste ea tempore, ipsa quas similique.</p>
+
+                <div class="card__btn">
+                    <!-- button here is an example of a mix. It is both a BLOCK and a MODIFIER -->
+                    <button class="button card__btn card__btn--primary">Sign up</button>
+                    <button class="button card__btn card__btn--secondary">Sign in</button> 
+
+                </div>
+            </div>
+        </div>
+
+        <!-- This here is also an example of a BLOCK and a MODIFIER -->
+        <div class="card card--dark">
+            <img src="images/istockphoto-1292588329-170667a.jpg" alt="A tree" class="card__img">
+            <div class="card__content">
+                <h2 class="card__title">I am a tree</h2>
+                <p class="card__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt cupiditate fugiat repellat, facilis dolorum eius. Temporibus aperiam itaque modi laudantium et, natus, in rem iste ea tempore, ipsa quas similique.</p>
+
+                <div class="card__btn">
+                    <!-- MIX. Block and Element. Also has a modifier class -->
+                    <button class="button card__btn card__btn--primary">Sign up</button>
+                    <button class="button card__btn card__btn--secondary">Sign in</button>
+                    
+                    <!-- WRONG -->
+                    <!-- <button class="button card__btn--primary">Sign up</button>
+                    <button class="button card__btn--secondary">Sign in</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
